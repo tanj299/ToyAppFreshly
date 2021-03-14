@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root 'application#hello'
+  # Code to create mapping of user URLs to controller actions for the Users resource
+  resources :users
+  root 'users#index'
 end
